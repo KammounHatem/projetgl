@@ -1,0 +1,43 @@
+acme_gestion_homepage:
+    pattern:  /hello
+    defaults: { _controller: AcmeGestionBundle:Default:index }
+acme_gestion_homepage0:
+    pattern:  /admin
+    defaults: { _controller: AcmeGestionBundle:Default:adminpage }
+acme_gestion_homepage1:
+    pattern:  /ajoutresponsable
+    defaults: { _controller: AcmeGestionBundle:Default:ajouterresponsable }
+acme_gestion_homepage2:
+    pattern:  /listeresponsable
+    defaults: { _controller: AcmeGestionBundle:Default:listerresponsable }
+acme_gestion_homepage3:
+    pattern:  /suppresp{id}
+    defaults: { _controller: AcmeGestionBundle:Default:supprimerresponsabele }
+acme_gestion_homepage4:
+    pattern:  /modifresp{id}
+    defaults: { _controller: AcmeGestionBundle:Default:editerresp }
+acme_gestion_homepage5:
+    pattern:  /ajoutcomp
+    defaults: { _controller: AcmeGestionBundle:Default:ajoutercompo }
+acme_gestion_homepage6:
+    pattern:  /listecomp
+    defaults: { _controller: AcmeGestionBundle:Default:listercomposante }
+acme_gestion_homepage7:
+    pattern:  /supcomp{id}
+    defaults: { _controller: AcmeGestionBundle:Default:supprimercomp}
+acme_gestion_homepage8:
+    pattern:  /modifiercomp{id}
+    defaults: { _controller: AcmeGestionBundle:Default:modifiercomp }
+acme_gestion_homepage9:
+    pattern:  /ajoutproduit
+    defaults: { _controller: AcmeGestionBundle:Default:ajouterproduit }
+acme_gestion_homepage10:
+    pattern:  /listeproduit
+    defaults: { _controller: AcmeGestionBundle:Default:listerproduit}   
+acme_gestion_homepage11:
+    pattern:  /supproduit{id}
+    defaults: { _controller: AcmeGestionBundle:Default:supprimerproduit}
+acme_gestion_homepage12:
+    pattern:  /modifierproduit{id}
+    defaults: { _controller: AcmeGestionBundle:Default:modifierproduit }    
+    

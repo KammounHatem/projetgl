@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Gestion produit logiciel</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="{{asset('default.css')}}" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1><a href="#">Gestion produit logiciels</a></h1>
+		<h2><a href="">By KEMBAM</a></h2>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="#" accesskey="1" title="">Home</a></li>
+			<li><a href="http://localhost:82/Gestion/web/app_dev.php/admin" accesskey="2" title="">Adminstrateur</a></li>
+			<li class="active"><a href="http://localhost:82/Gestion/web/app_dev.php/hello" accesskey="3" title="">Responsable</a></li>
+			<li><a href="#" accesskey="4" title="">About</a></li>
+			<li><a href="#" accesskey="5" title="">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+<div id="gallery">
+	<div id="top-photo">
+		<p><a href="#"><img src="{{asset('images/img08.jpg')}}" alt="" width="830" height="300" /></a></p>
+	</div>
+</div>
+
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<div class="post">
+                 
+                 <h1> liste de composantes </h1>
+                   <form name="form">
+
+<table width="400" border="1">	
+  <tr>
+    
+    <td width="32">Titre</strong></td>
+    <td width="51">Version</strong></td>
+    <td width="38">Nature</strong></td>
+    <td width="33">License</strong></td>
+    <td width="72">Cout</strong></td>
+    <td width="98">Modifier</td>
+    <td width="98">Supprimer</td>
+  </tr>
+		
+ <tr>
+                       {% for cat in composante %}  
+			<td>{{ cat.titre}}</td>
+                        <td>{{ cat.version}}</td>
+                        <td>{{ cat.nature}}</td>
+                        <td>{{ cat.license }}</td>
+                        <td>{{ cat.cout}}</td>
+                        <td><a href="{{ path('acme_gestion_homepage8', { 'id': cat.id }) }}">Modifier</a></td>
+                        <td> <a href="{{ path('acme_gestion_homepage7', { 'id': cat.id }) }}"> supprimer </a> </td>
+                          
+</tr>
+{% endfor %}
+		
+</table>
+
+</form>
+      {% for cat in composante %} 
+      {% else %}
+      <h1>Aucunne Composante n'a été trouvée.</h1>
+	{% endfor %}
+			
+		<div class="post">
+
+			
+		</div>
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	
+	<!-- end sidebar -->
+</div>
+<div style="clear: both; height: 30px">&nbsp;</div>
+<!-- end page -->
+<div id="footer">
+	<p>&copy;2013 All Rights Reserved. &nbsp;&bull;&nbsp; Designed by <a href="">KEMBAM</a></p>
+</div>
+</body>
+</html>
+
