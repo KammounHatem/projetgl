@@ -296,11 +296,11 @@ class appDevDebugProjectContainer extends Container
      * This service is shared.
      * This method always returns the same instance of the service.
      *
-     * @return EntityManager516c0fe8e3fa8_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager516c0fe8e3fa8_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
+     * @return EntityManager517d94d3d0da7_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager A EntityManager517d94d3d0da7_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager instance.
      */
     protected function getDoctrine_Orm_DefaultEntityManagerService()
     {
-        require_once 'C:/wamp/www/Gestion/app/cache/dev/jms_diextra/doctrine/EntityManager_516c0fe8e3fa8.php';
+        require_once 'C:/wamp/www/Gestion/app/cache/dev/jms_diextra/doctrine/EntityManager_517d94d3d0da7.php';
 
         $a = new \Doctrine\Common\Cache\ArrayCache();
         $a->setNamespace('sf2orm_default_4338db249cafda0135833e134d397a22');
@@ -312,7 +312,7 @@ class appDevDebugProjectContainer extends Container
         $c->setNamespace('sf2orm_default_4338db249cafda0135833e134d397a22');
 
         $d = new \Doctrine\ORM\Mapping\Driver\DriverChain();
-        $d->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($this->get('annotation_reader'), array(0 => 'C:\\wamp\\www\\Gestion\\src\\Acme\\Bundle\\GestionBundle\\Entity')), 'Acme\\Bundle\\GestionBundle\\Entity');
+        $d->addDriver(new \Doctrine\ORM\Mapping\Driver\PHPDriver(array(0 => 'C:\\wamp\\www\\Gestion\\src\\Acme\\Bundle\\GestionBundle\\Resources\\config\\doctrine')), 'Acme\\Bundle\\GestionBundle\\Entity');
 
         $e = new \Doctrine\ORM\Configuration();
         $e->setEntityNamespaces(array('AcmeGestionBundle' => 'Acme\\Bundle\\GestionBundle\\Entity'));
@@ -330,7 +330,7 @@ class appDevDebugProjectContainer extends Container
         $f = call_user_func(array('Doctrine\\ORM\\EntityManager', 'create'), $this->get('doctrine.dbal.default_connection'), $e);
         $this->get('doctrine.orm.default_manager_configurator')->configure($f);
 
-        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager516c0fe8e3fa8_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($f, $this);
+        return $this->services['doctrine.orm.default_entity_manager'] = new \EntityManager517d94d3d0da7_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager($f, $this);
     }
 
     /**
@@ -2840,7 +2840,7 @@ class appDevDebugProjectContainer extends Container
     /**
      * Gets the doctrine.orm.entity_manager service alias.
      *
-     * @return EntityManager516c0fe8e3fa8_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
+     * @return EntityManager517d94d3d0da7_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager An instance of the doctrine.orm.default_entity_manager service
      */
     protected function getDoctrine_Orm_EntityManagerService()
     {
@@ -3703,8 +3703,8 @@ class appDevDebugProjectContainer extends Container
             'jms_di_extra.cache_warmer.controller_file_blacklist' => array(
 
             ),
-            'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/wamp/www/Gestion/app/cache/dev/jms_diextra/doctrine/EntityManager_516c0fe8e3fa8.php',
-            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager516c0fe8e3fa8_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
+            'jms_di_extra.doctrine_integration.entity_manager.file' => 'C:/wamp/www/Gestion/app/cache/dev/jms_diextra/doctrine/EntityManager_517d94d3d0da7.php',
+            'jms_di_extra.doctrine_integration.entity_manager.class' => 'EntityManager517d94d3d0da7_546a8d27f194334ee012bfe64f629947b07e4919\\__CG__\\Doctrine\\ORM\\EntityManager',
             'security.secured_services' => array(
 
             ),

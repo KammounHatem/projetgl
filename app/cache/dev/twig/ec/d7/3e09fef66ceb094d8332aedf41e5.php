@@ -1,6 +1,6 @@
 <?php
 
-/* @WebProfiler/Collector/time.html.twig */
+/* WebProfilerBundle:Collector:time.html.twig */
 class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -25,7 +25,7 @@ class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 3
-        $context["__internal_b2bd692cd86928f36597b628b12047dbe0433e6b"] = $this;
+        $context["__internal_c23768670ea4bf64a2211b0309caeb6355019b13"] = $this;
         // line 5
         if ((!array_key_exists("colors", $context))) {
             // line 6
@@ -160,7 +160,7 @@ class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
         echo "
     ";
         // line 82
-        echo $context["__internal_b2bd692cd86928f36597b628b12047dbe0433e6b"]->getdisplay_timeline(("timeline_" . $this->getContext($context, "token")), $this->getAttribute($this->getContext($context, "collector"), "events"), $this->getContext($context, "colors"));
+        echo $context["__internal_c23768670ea4bf64a2211b0309caeb6355019b13"]->getdisplay_timeline(("timeline_" . $this->getContext($context, "token")), $this->getAttribute($this->getContext($context, "collector"), "events"), $this->getContext($context, "colors"));
         echo "
 
     ";
@@ -190,7 +190,7 @@ class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
 
             ";
                 // line 92
-                echo $context["__internal_b2bd692cd86928f36597b628b12047dbe0433e6b"]->getdisplay_timeline(("timeline_" . $this->getAttribute($this->getContext($context, "child"), "token")), $this->getContext($context, "events"), $this->getContext($context, "colors"));
+                echo $context["__internal_c23768670ea4bf64a2211b0309caeb6355019b13"]->getdisplay_timeline(("timeline_" . $this->getAttribute($this->getContext($context, "child"), "token")), $this->getContext($context, "events"), $this->getContext($context, "colors"));
                 echo "
         ";
             }
@@ -507,7 +507,7 @@ class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
             \"requests\": [
 ";
         // line 393
-        echo $context["__internal_b2bd692cd86928f36597b628b12047dbe0433e6b"]->getdump_request_data($this->getContext($context, "token"), $this->getContext($context, "profile"), $this->getAttribute($this->getContext($context, "collector"), "events"), $this->getAttribute($this->getAttribute($this->getAttribute($this->getContext($context, "collector"), "events"), "__section__"), "origin"));
+        echo $context["__internal_c23768670ea4bf64a2211b0309caeb6355019b13"]->getdump_request_data($this->getContext($context, "token"), $this->getContext($context, "profile"), $this->getAttribute($this->getContext($context, "collector"), "events"), $this->getAttribute($this->getAttribute($this->getAttribute($this->getContext($context, "collector"), "events"), "__section__"), "origin"));
         echo "
 
 ";
@@ -534,7 +534,7 @@ class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
             }
             foreach ($context['_seq'] as $context["_key"] => $context["child"]) {
                 // line 398
-                echo $context["__internal_b2bd692cd86928f36597b628b12047dbe0433e6b"]->getdump_request_data($this->getAttribute($this->getContext($context, "child"), "token"), $this->getContext($context, "child"), $this->getAttribute($this->getAttribute($this->getContext($context, "child"), "getcollector", array(0 => "time"), "method"), "events"), $this->getAttribute($this->getAttribute($this->getAttribute($this->getContext($context, "collector"), "events"), "__section__"), "origin"));
+                echo $context["__internal_c23768670ea4bf64a2211b0309caeb6355019b13"]->getdump_request_data($this->getAttribute($this->getContext($context, "child"), "token"), $this->getContext($context, "child"), $this->getAttribute($this->getAttribute($this->getContext($context, "child"), "getcollector", array(0 => "time"), "method"), "events"), $this->getAttribute($this->getAttribute($this->getAttribute($this->getContext($context, "collector"), "events"), "__section__"), "origin"));
                 echo (($this->getAttribute($this->getContext($context, "loop"), "last")) ? ("") : (","));
                 echo "
 ";
@@ -603,7 +603,7 @@ class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
         ob_start();
         try {
             // line 437
-            $context["__internal_1e00d85a0e4b40660d61cfbd4febf9dd97cf3adc"] = $this;
+            $context["__internal_db79cadb46e3a7fc69f91c87af6a64fc988b90e8"] = $this;
             // line 438
             echo "                {
                     \"id\": \"";
@@ -617,7 +617,7 @@ class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
                     \"events\": [
 ";
             // line 442
-            echo $context["__internal_1e00d85a0e4b40660d61cfbd4febf9dd97cf3adc"]->getdump_events($this->getContext($context, "events"));
+            echo $context["__internal_db79cadb46e3a7fc69f91c87af6a64fc988b90e8"]->getdump_events($this->getContext($context, "events"));
             echo "
                     ]
                 }
@@ -808,7 +808,7 @@ class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
 
     public function getTemplateName()
     {
-        return "@WebProfiler/Collector/time.html.twig";
+        return "WebProfilerBundle:Collector:time.html.twig";
     }
 
     public function isTraitable()
@@ -818,6 +818,6 @@ class __TwigTemplate_ecd73e09fef66ceb094d8332aedf41e5 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  796 => 475,  793 => 474,  782 => 472,  778 => 471,  774 => 469,  761 => 468,  735 => 463,  732 => 462,  713 => 460,  696 => 459,  692 => 457,  688 => 456,  684 => 455,  680 => 454,  676 => 453,  672 => 452,  668 => 451,  665 => 450,  663 => 449,  646 => 448,  635 => 447,  620 => 442,  615 => 440,  611 => 439,  608 => 438,  606 => 437,  592 => 436,  555 => 401,  537 => 398,  520 => 397,  517 => 396,  515 => 395,  510 => 393,  505 => 391,  201 => 94,  181 => 88,  170 => 85,  163 => 82,  160 => 81,  153 => 77,  141 => 73,  90 => 42,  84 => 40,  68 => 30,  62 => 27,  28 => 3,  332 => 116,  321 => 112,  318 => 111,  315 => 110,  312 => 109,  309 => 108,  300 => 105,  297 => 104,  291 => 102,  288 => 101,  283 => 100,  274 => 97,  258 => 94,  243 => 92,  235 => 85,  224 => 81,  202 => 77,  156 => 62,  136 => 71,  122 => 41,  119 => 40,  112 => 36,  109 => 52,  85 => 24,  58 => 25,  44 => 20,  178 => 87,  175 => 86,  154 => 60,  134 => 54,  125 => 42,  121 => 50,  118 => 49,  113 => 48,  102 => 40,  87 => 41,  49 => 11,  46 => 10,  27 => 3,  91 => 33,  63 => 18,  385 => 160,  382 => 159,  376 => 158,  374 => 157,  367 => 156,  363 => 155,  359 => 153,  357 => 152,  354 => 151,  349 => 149,  341 => 118,  336 => 145,  330 => 141,  324 => 113,  322 => 138,  317 => 135,  311 => 131,  308 => 130,  305 => 129,  303 => 106,  298 => 125,  289 => 120,  286 => 119,  284 => 118,  279 => 115,  277 => 114,  272 => 111,  270 => 110,  265 => 96,  261 => 105,  255 => 93,  251 => 101,  244 => 97,  237 => 93,  231 => 83,  228 => 88,  225 => 87,  223 => 86,  212 => 78,  209 => 78,  206 => 77,  204 => 95,  193 => 92,  190 => 76,  187 => 89,  185 => 74,  180 => 63,  174 => 65,  171 => 58,  168 => 84,  166 => 56,  159 => 53,  151 => 59,  148 => 46,  143 => 51,  140 => 58,  130 => 39,  116 => 57,  107 => 27,  103 => 25,  97 => 23,  88 => 25,  82 => 28,  76 => 34,  73 => 33,  70 => 15,  67 => 24,  61 => 15,  39 => 6,  36 => 5,  79 => 21,  47 => 21,  45 => 9,  40 => 11,  37 => 10,  22 => 1,  246 => 32,  164 => 58,  162 => 54,  157 => 56,  145 => 74,  139 => 49,  131 => 45,  115 => 39,  108 => 37,  106 => 51,  101 => 31,  98 => 45,  96 => 37,  92 => 43,  80 => 32,  74 => 14,  64 => 23,  55 => 24,  52 => 12,  50 => 22,  43 => 12,  41 => 19,  32 => 6,  29 => 6,  360 => 167,  351 => 150,  347 => 163,  344 => 119,  339 => 146,  337 => 160,  329 => 154,  327 => 114,  320 => 149,  313 => 145,  306 => 107,  299 => 137,  292 => 121,  285 => 129,  278 => 98,  263 => 95,  256 => 109,  249 => 138,  242 => 96,  232 => 93,  229 => 92,  221 => 86,  218 => 83,  213 => 82,  210 => 81,  205 => 78,  199 => 73,  191 => 67,  189 => 73,  179 => 68,  172 => 64,  165 => 60,  161 => 63,  158 => 80,  155 => 56,  147 => 75,  142 => 51,  138 => 50,  135 => 49,  132 => 48,  126 => 47,  123 => 61,  120 => 40,  117 => 39,  111 => 47,  104 => 32,  100 => 39,  93 => 31,  89 => 29,  86 => 28,  83 => 33,  75 => 19,  72 => 18,  69 => 17,  66 => 11,  60 => 6,  54 => 22,  51 => 12,  48 => 11,  42 => 7,  38 => 18,  35 => 6,  33 => 4,  30 => 5,);
+        return array (  796 => 475,  793 => 474,  782 => 472,  778 => 471,  774 => 469,  761 => 468,  735 => 463,  732 => 462,  713 => 460,  696 => 459,  692 => 457,  688 => 456,  684 => 455,  680 => 454,  676 => 453,  672 => 452,  668 => 451,  665 => 450,  663 => 449,  646 => 448,  635 => 447,  620 => 442,  615 => 440,  611 => 439,  608 => 438,  606 => 437,  592 => 436,  555 => 401,  537 => 398,  520 => 397,  517 => 396,  515 => 395,  510 => 393,  505 => 391,  201 => 94,  181 => 88,  170 => 85,  160 => 81,  153 => 77,  385 => 160,  382 => 159,  376 => 158,  367 => 156,  363 => 155,  359 => 153,  357 => 152,  354 => 151,  349 => 149,  336 => 145,  330 => 141,  317 => 135,  311 => 131,  308 => 130,  289 => 120,  286 => 119,  284 => 118,  279 => 115,  277 => 114,  272 => 111,  270 => 110,  261 => 105,  251 => 101,  244 => 97,  237 => 93,  228 => 88,  225 => 87,  223 => 86,  206 => 77,  204 => 95,  180 => 63,  159 => 53,  148 => 46,  34 => 5,  332 => 116,  324 => 139,  321 => 112,  318 => 111,  315 => 110,  303 => 128,  300 => 105,  297 => 104,  291 => 102,  288 => 101,  274 => 97,  265 => 107,  255 => 103,  243 => 92,  231 => 89,  212 => 79,  202 => 77,  190 => 68,  185 => 66,  174 => 59,  178 => 87,  175 => 86,  351 => 150,  347 => 163,  344 => 119,  339 => 146,  329 => 154,  327 => 140,  320 => 149,  313 => 145,  306 => 107,  299 => 137,  292 => 121,  263 => 95,  256 => 109,  249 => 138,  242 => 96,  232 => 93,  221 => 86,  218 => 83,  213 => 82,  210 => 81,  205 => 78,  191 => 67,  179 => 68,  172 => 64,  165 => 60,  161 => 63,  104 => 32,  100 => 24,  63 => 18,  59 => 13,  127 => 60,  76 => 34,  53 => 11,  134 => 54,  118 => 49,  110 => 22,  102 => 40,  90 => 42,  146 => 76,  129 => 72,  113 => 48,  97 => 23,  58 => 25,  480 => 162,  474 => 161,  469 => 158,  461 => 155,  457 => 153,  453 => 151,  444 => 149,  440 => 148,  437 => 147,  435 => 146,  430 => 144,  427 => 143,  423 => 142,  413 => 134,  409 => 132,  407 => 131,  402 => 130,  398 => 129,  393 => 126,  387 => 122,  384 => 121,  381 => 120,  379 => 119,  374 => 157,  368 => 112,  365 => 111,  362 => 110,  360 => 167,  355 => 106,  341 => 147,  337 => 160,  322 => 138,  314 => 99,  312 => 109,  309 => 108,  305 => 129,  298 => 125,  294 => 90,  285 => 129,  283 => 100,  278 => 98,  268 => 85,  264 => 84,  258 => 94,  252 => 80,  247 => 78,  241 => 77,  235 => 85,  229 => 92,  224 => 81,  220 => 70,  214 => 69,  208 => 68,  177 => 65,  169 => 60,  143 => 43,  140 => 42,  132 => 48,  128 => 70,  119 => 40,  107 => 27,  71 => 19,  38 => 18,  155 => 56,  135 => 49,  126 => 47,  114 => 65,  84 => 40,  70 => 15,  67 => 14,  61 => 12,  94 => 34,  89 => 29,  85 => 24,  75 => 19,  68 => 30,  56 => 11,  87 => 41,  21 => 2,  26 => 9,  93 => 31,  88 => 20,  78 => 26,  46 => 13,  27 => 3,  44 => 20,  31 => 4,  28 => 3,  196 => 90,  183 => 82,  171 => 58,  166 => 56,  163 => 82,  158 => 80,  156 => 62,  151 => 47,  142 => 51,  138 => 50,  136 => 71,  121 => 50,  117 => 39,  105 => 18,  91 => 33,  62 => 27,  49 => 14,  24 => 3,  25 => 35,  19 => 1,  79 => 18,  72 => 18,  69 => 17,  47 => 21,  40 => 6,  37 => 5,  22 => 2,  246 => 32,  157 => 56,  145 => 74,  139 => 49,  131 => 45,  123 => 61,  120 => 44,  115 => 43,  111 => 47,  108 => 19,  101 => 31,  98 => 45,  96 => 37,  83 => 33,  74 => 27,  66 => 19,  55 => 24,  52 => 12,  50 => 22,  43 => 12,  41 => 19,  35 => 6,  32 => 6,  29 => 3,  209 => 78,  203 => 78,  199 => 73,  193 => 92,  189 => 73,  187 => 89,  182 => 66,  176 => 64,  173 => 74,  168 => 84,  164 => 59,  162 => 54,  154 => 60,  149 => 51,  147 => 75,  144 => 76,  141 => 73,  133 => 55,  130 => 39,  125 => 42,  122 => 41,  116 => 57,  112 => 36,  109 => 52,  106 => 51,  103 => 25,  99 => 30,  95 => 34,  92 => 43,  86 => 28,  82 => 19,  80 => 27,  73 => 33,  64 => 23,  60 => 16,  57 => 16,  54 => 13,  51 => 13,  48 => 11,  45 => 9,  42 => 7,  39 => 6,  36 => 5,  33 => 4,  30 => 5,);
     }
 }
